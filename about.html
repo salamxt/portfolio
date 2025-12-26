@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Salamat Tussupbekov</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .about-hero { padding: 160px 0 80px; }
+    .about-hero-inner { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--container-padding); display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; }
+    .about-photo { width: 100%; aspect-ratio: 1; background: var(--off-white); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; font-size: 120px; border: 1px solid var(--silver); }
+    .about-intro h1 { margin-bottom: 24px; }
+    .about-intro p { font-size: 18px; margin-bottom: 20px; }
+    .about-section { padding: 80px 0; }
+    .about-section-inner { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--container-padding); }
+    .about-section.alt-bg { background: var(--white); }
+    .journey-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px; }
+    .journey-item { background: var(--off-white); border-radius: var(--radius-md); padding: 24px; border: 1px solid var(--silver); }
+    .journey-year { font-family: 'Fraunces', serif; font-size: 28px; color: var(--black); margin-bottom: 8px; }
+    .journey-title { font-weight: 600; margin-bottom: 4px; }
+    .journey-desc { font-size: 14px; color: var(--gray); }
+    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 40px; }
+    .skill-category h3 { font-size: 18px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--silver); }
+    .skill-list { list-style: none; }
+    .skill-list li { padding: 8px 0; font-size: 15px; color: var(--gray-dark); border-bottom: 1px solid var(--silver); }
+    @media (max-width: 1024px) { .about-hero-inner { grid-template-columns: 1fr; gap: 48px; } .about-photo { max-width: 300px; margin: 0 auto; } .journey-grid { grid-template-columns: repeat(2, 1fr); } .skills-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .journey-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav><div class="nav-inner"><a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="Sx"><span class="nav-logo-text">Salamat Experience</span></a><div class="nav-toggle" onclick="toggleNav()"><span></span><span></span><span></span></div><div class="nav-links" id="navLinks"><a href="work.html">Work</a><a href="about.html">About</a><a href="contact.html" class="nav-cta">Let's Talk</a></div></div></nav>
+
+  <section class="about-hero">
+    <div class="about-hero-inner">
+      <div class="about-photo">👨‍💻</div>
+      <div class="about-intro">
+        <span class="section-tag">About Me</span>
+        <h1>Designing across cultures taught me one thing</h1>
+        <p>Good design is universal. Whether I'm designing for Kazakh grandmothers buying groceries online for the first time or German board members reviewing billion-dollar decisions — the principles are the same.</p>
+        <p>Clarity. Trust. Respect for the user's time.</p>
+        <p>I hold a Master's in Human-Computer Interaction from RWTH Aachen University and have designed products used by over 100,000 people across 8 countries.</p>
+        <div style="margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap;">
+          <a href="assets/Salamat_Tussupbekov_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section alt-bg">
+    <div class="about-section-inner">
+      <span class="section-tag">Journey</span>
+      <h2>From Astana to Palo Alto</h2>
+      <div class="journey-grid">
+        <div class="journey-item"><div class="journey-year">2016</div><div class="journey-title">Master's, RWTH Aachen</div><div class="journey-desc">Human-Computer Interaction, Germany</div></div>
+        <div class="journey-item"><div class="journey-year">2018</div><div class="journey-title">Clever Market</div><div class="journey-desc">Lead Designer, Kazakhstan</div></div>
+        <div class="journey-item"><div class="journey-year">2020</div><div class="journey-title">Baiterek</div><div class="journey-desc">Enterprise UX, Nur-Sultan</div></div>
+        <div class="journey-item"><div class="journey-year">2024</div><div class="journey-title">Palo Alto</div><div class="journey-desc">Seeking new opportunities</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-section-inner">
+      <span class="section-tag">Skills</span>
+      <h2>What I Bring</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Design</h3>
+          <ul class="skill-list">
+            <li>User Research & Testing</li>
+            <li>Information Architecture</li>
+            <li>Interaction Design</li>
+            <li>Visual Design</li>
+            <li>Design Systems</li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Tools</h3>
+          <ul class="skill-list">
+            <li>Figma</li>
+            <li>Sketch</li>
+            <li>Adobe Creative Suite</li>
+            <li>Principle / Framer</li>
+            <li>Miro / FigJam</li>
+            <li>HTML / CSS</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <ul class="skill-list">
+            <li>English (Fluent)</li>
+            <li>Russian (Native)</li>
+            <li>Kazakh (Native)</li>
+            <li>German (Conversational)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="footer-inner"><div class="footer-brand"><img src="assets/logo.png" alt="Sx"><span>© 2024 Salamat Tussupbekov</span></div><div class="footer-links"><a href="work.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div class="footer-social"><a href="https://linkedin.com/in/salamat" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a href="mailto:hello@salamxt.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></div></div></footer>
+  <script>function toggleNav(){document.getElementById('navLinks').classList.toggle('active');}</script>
+</body>
+</html>
